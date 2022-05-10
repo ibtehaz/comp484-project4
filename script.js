@@ -19,7 +19,6 @@ const locations = [
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 34.239171, lng: -118.527593 },
       zoom: 17,
-      // mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDoubleClickZoom: true,
       scrollwheel: false,
       draggable: false,
@@ -27,7 +26,6 @@ const locations = [
       disableDefaultUI: true,
       gestureHandling: "none",
       styles: [
-        //PLACES OF INTEREST LABELS
         {
           featureType: "poi",
           elementType: "labels",
@@ -37,7 +35,6 @@ const locations = [
             },
           ],
         },
-        // ROAD LABELS
         {
           featureType: "road",
           elementType: "labels",
@@ -155,7 +152,6 @@ const locations = [
     }
   }
   
-  /////TIMER FUNCTIONS
   let min = 0,
     sec = 0,
     hun = 0,
